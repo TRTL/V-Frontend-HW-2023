@@ -1,0 +1,23 @@
+#mainContainer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    margin: 0px auto;
+    max-width: 1200px;
+}
+
+#mainContainer div {
+    margin: 15px;
+    width: 262px;
+    height: 192px;
+    box-shadow: 1px 1px 1px #888888;
+    border-radius: 4px;
+}
+
+#mainContainer div img {
+    width: 262px;
+    height: 192px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+}
