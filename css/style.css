@@ -1,4 +1,4 @@
-#mainContainer {
+#main-container {
     display: flex;
     flex-flow: row wrap;
     padding: 10px;
@@ -6,18 +6,76 @@
     max-width: 1200px;
 }
 
-#mainContainer div {
+.image-container {
     margin: 15px;
     width: 262px;
+    position: relative;
     height: 192px;
     box-shadow: 1px 1px 1px #888888;
     border-radius: 4px;
 }
 
-#mainContainer div img {
+.image-container img {
     width: 262px;
     height: 192px;
     object-fit: cover;
     object-position: center;
     border-radius: 4px;
+}
+
+.info-container {
+    display: none;
+    width: 262px;
+    height: 192px;
+    padding: 5px;
+    border-radius: 4px;
+
+    background-color: #00000099;
+    color: #fff;
+
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container:hover .info-container {
+    display: flex;
+}
+
+
+.info-container span:first-child {
+    font-weight: bold;
+}
+
+.info-container span {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.separator {
+    height: 2px;
+    width: 20%;
+    background-color: #fff;
+    margin: 4px 0px;
+}
+
+.favorite-button {
+    background-color: #ffffff00;
+    color: white;
+    border: solid 1px #fff;
+    border-radius: 20px;
+    padding: 6px 16px;
+    margin-top: 5px;
+}
+
+.favorite-button:hover {
+    background-color: #ffffff55;
+    cursor: pointer;
 }
