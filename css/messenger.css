@@ -1,0 +1,23 @@
+#messenger {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    z-index: 300;
+}
+
+#messenger>div {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 5px;
+    white-space: nowrap;
+    border: solid 1px #aaa;
+    color: #000;
+    background-color: #eee;
+}

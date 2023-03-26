@@ -7,15 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/messenger.css">
     <title>Document</title>
     <link rel="shortcut icon" href="#">
 </head>
 
 <body>
+    <div id="user-getter-bg">
+        <div id="user-getter">
+            <span>Hello. What's your name?</span>
+            <input type="text" id="txt-user-name">
+            <button id="btn-enter">Enter</button>
+        </div>
+    </div>
+
+    <section id="menu-bar">
+        <button id="btn-show-hide-menu">Menu</button>
+        <div id="menu-div">
+            <input type="text" id="txt-flickr-tags" value="dogs">
+            <button id="btn-flickr">Search Flickr Photos</button>
+            <button id="btn-my-favorites">Show My Favorites</button>
+            <input type="checkbox" id="show-messages">
+            <span id="show-messages-text">Show messages</span>
+            <button id="btn-exit">Exit</button>
+        </div>
+    </section>
 
     <section id="main-container"></section>
+
+    <section id="messenger"></section>
+
     <!-- SCRIPTS -->
     <script src="js/script.js"></script>
+    <script src="js/messenger.js"></script>
 </body>
 
 </html>
